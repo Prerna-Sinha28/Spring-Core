@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    <bean id="aa" class="com.prerna.Student">
+    <property name="name">
+    <value>Prerna</value>
+    
+    </property>
+    <!-- List Collection Injection-->
+    <property name="phone">
+    <list>
+    <value>7732937830</value>
+    <value>8764635664</value>
+    <value>9473202181</value>
+    
+    </list>   
+    </property>
+    <property name="addresses">
+    <set>
+    <value>Jaipur</value>
+    <value>Bihar</value>
+    <value>Jharkhand</value>
+    </set>    
+    </property>
+    <property name="courses">
+    <map>
+    <entry key="Java">
+    <value>12 Month</value>
+    </entry>
+    <entry key="Python">
+    <value>6-8 Month</value>
+    </entry>
+    <entry key="Mern Stack">
+    <value>6 Month</value>
+    </entry>   
+    </map>    
+    </property>    
+    </bean>
+    </beans>
