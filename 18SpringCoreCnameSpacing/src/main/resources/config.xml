@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:c="http://www.springframework.org/schema/c"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Address Bean using constructor injection -->
+    <bean id="adrId" class="com.prerna.Address"
+          c:houseno="111"
+          c:city="Delhi"
+          c:pincode="12345"/>
+
+    <!-- Student Bean using constructor injection -->
+    <bean id="stdId" class="com.prerna.Student"
+          c:name="Prerna"
+          c:rollno="101"
+          c:adress-ref="adrId"/>
+</beans>
